@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Pau Simarro">
+
+  <link rel="apple-touch-icon" href="../img/coet_icon.png" sizes="180x180">
+  <link rel="icon" href="../img/coet_icon.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="../img/coet_icon.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+  <title>ConstruCoet</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+
+
+  <meta name="theme-color" content="#7952b3">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Syncopate:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="d-flex h-100 text-center text-white">
+
+
+
+
+  <!-- Modals Retorn inici -->
+
+  <div class="modal fade text-dark" id="validationInici" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Atenció!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Segur que vols tornar a l'inici? Es perdrà tot el progrés que hagis fet fins ara.
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-primary" href="index.html">Sí</a>
+          <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal"
+            aria-label="Close">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Com jugar -->
+
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel">Instruccions</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quam perspiciatis iusto et error rem corporis
+          voluptas provident nobis impedit. Magnam, veritatis voluptas, cumque laudantium ab velit voluptatum
+          accusantium maiores quis iure expedita sunt voluptates? Nostrum, voluptatem nesciunt! Quaerat assumenda
+          perferendis beatae nihil iste incidunt pariatur rerum aspernatur ab minus.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+            data-bs-dismiss="modal">Veure més</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered text-dark">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, officia! Nostrum maxime animi dignissimos
+          facilis quam sed nesciunt debitis repellendus numquam. Tempore pariatur itaque vitae architecto repellendus
+          error, nam similique at molestiae eaque? Repudiandae pariatur rerum accusantium quod, fugit optio nam ipsam,
+          minima atque officiis eveniet repellendus illo voluptatibus officia.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+            data-bs-dismiss="modal">Back to first</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Video background-->
+
+  <video autoplay muted loop playsinline id="myVideo">
+    <source src="../img/stars.mp4" type="video/mp4">
+  </video>
+
+  <!--Main content-->
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">ConstruCoet</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link active" aria-current="page" data-bs-toggle="modal" href="#validationInici">Inici</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="px-3 " id="mainpage-container">
+      <h1>ConstruCoet</h1>
+      <p class="lead">ConstruCoet és un joc on pots construir el teu propi coet, afegir-hi propulsors, i jugar a navegar
+        per l'espai amb ell!</p>
+      <p class="lead">
+        <button class="btn btn-lg btn-secondary fw-bold border-white bg-white" id="playButton">Juga</button>
+        <a class="btn btn-dark" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Com jugar</a>
+      </p>
+    </div>
+
+    <div class="px-3 hide" id="playpage-container" hidden=true>
+      <div class="row align-items-center ">
+
+        <div class="col-6 d-flex">
+          <div class="row justify-content-center">
+            <div class="row col-12">
+              <h2>Crear coet</h2>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Coet ID</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Nombre de propulsors</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            Selecció de forma i color:
+            <div class="row justify-content-center align-items-center my-2">
+              
+              <i class="col-4 mx-2 fas fa-rocket" style="font-size: 70px;"></i>
+              <i class='col-4 mx-2 bx bxs-rocket' style="font-size: 70px;"></i>
+              <input class="col-2 mx-2" type="color">
+            </div>
+            
+            <button class="col-8 my-2 btn btn-lg btn-secondary fw-bold border-white bg-white" id="newRocket">Crear coet</button>
+            
+          </div>
+        </div>
+        <div class="col-6">
+          <h2>Coets disponibles</h2>
+          <div id="coets-disponibles">No hi ha cap coet disponible encara.</div>
+        </div>
+        <div class="col-12">
+          <button class="col-8 my-2 btn btn-lg btn-secondary fw-bold border-white text-white"
+          id="playRockets">Jugar</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="px-3 hide">
+
+    </div>
+
+
+    <footer class="mt-auto text-white-50">
+      <p>Copyright 2021, by <a href="https://github.com/simba-dev/" class="text-white">simba-dev</a>.</p>
+    </footer>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+
+  <script src="../controllers/controller.js"></script>
+  <script src="../models/rocket.js"></script>
+  <script src="../models/propulsor.js"></script>
+</body>
+
+</html>
